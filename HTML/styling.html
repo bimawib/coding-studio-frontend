@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - CodingStudio</title>
+    <!-- external -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <!-- internal -->
+    <style>
+        #judul{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="judul">CSS</h1>
+    <hr>
+
+    <ol>
+        <li>Descendant Combinator : div h1</li>
+        <li>Child Combinator : div > h1 (hanya untuk anaknya saja)</li>
+        <li>Sibling Combinator : h1 ~ p (semua saudara kandung dari h1 (anak pertama tidak terpilih))</li>
+        <li>Adjacent Sibling Combinator : h1 + p (saudara kandung terdekat)</li>
+    </ol>
+
+    <section id="sibling-combinator">
+        <p>P1</p>
+        <p>P2</p>
+        <div>Ini Div</div>
+        <p>P3</p>
+        <p>P4</p>
+    </section>
+    <hr>
+
+    <h1>Display</h1>
+    <section id="display">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, obcaecati libero iusto quis dolores ut! <div>Display</div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quisquam est voluptas fuga, voluptates eveniet!
+    </section>
+    <ul>
+        <li>Inline (ex:Span) mengikuti luas konten (inline)</li>
+        <li>Block (ex:Div) memblock satu block secara horizontal (block)</li>
+        <li>Display None : menyembunyikan tampilan</li>
+        <li>Inline Block : mengizinkan kita untuk mengubah panjang dan lebar suatu elemen</li>
+    </ul>
+    <hr>
+
+    <h1>Display Flex and Grid</h1>
+    <section id="display-flex">
+        <div id="satu">1</div>
+        <div id="dua">2</div>
+        <div id="tiga">3</div>
+        <div id="empat">4</div>
+        <div id="lima">5</div>
+    </section>
+    <!-- hanya bisa nyambung kebawah atau kesamping -->
+
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Certification Coding Studio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     
@@ -39,7 +40,163 @@
 
     <h1>List</h1>
 
+    <!-- Ordered list -->
+
+    <ol type="A">
+        <li>Uruca</li>
+        <li>Uruha</li>
+        <li>Nazuna</li>
+    </ol>
+
+    <!-- Unordered List -->
     
+    <ul type="square">
+        <li>Mobil</li>
+        <li>Motor</li>
+        <li>Perahu</li>
+        <li>Pesawat</li>
+    </ul>
+    <hr>
+
+    <h1>Anchor</h1>
+
+    <a href="https://bimawib.space" target="_blank">CLICK THIS TAG ANCHOR TO GO TO MY MANUAL BREW</a>
+    <!-- can only use http or https -->
+    <hr>
+
+    <h1>Image</h1>
+
+    <img src="https://devices.honakeng.com/wp-content/uploads/2022/02/b622IooB_400x400.jpg" alt="cute" style="max-width: 150px;">
+    <img src="../img/slebew.png" alt="cool sangat" style="max-width: 150px;">
+    <hr>
+
+    <h1>Table</h1>
+
+    <table border="1">
+
+        <thead>
+            <th>No.</th>
+            <th>Nama</th>
+            <th>Usia</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bambang</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>Xantares</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <!-- <td>3</td> -->
+                <td>Imorr</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Rata-rata umur</td>
+                <td>27</td>
+            </tr>
+        </tfoot>
+        <!-- colspan untuk horizontal merge, rowspan untuk vertikal merge -->
+    </table>
+    <hr>
+
+    <h1>Layouting using table</h1>
+
+    <p>Its actually outdated so dont use it pls xD</p>
+    <p>use CSS instead (Flex and Grid feature)</p>
+    <hr>
+
+    <h1>Form</h1>
+
+    <form action="">
+        <label for="nama">Nama : </label>
+        <input type="text" id="nama" name="nama" placeholder="Edenia">
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="edenia@ub.ac.id">
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password">
+        <br>
+        <!-- <label for="tanggal">Tanggal</label>
+        <input type="date" id="tanggal" name="tanggal">
+        <br> -->
+        <!-- <input type="color"> -->
+        <textarea name="blog" id="blog" cols="50" rows="13" placeholder="Lorem ipsum kolor silit amit amit"></textarea>
+        <br>
+        <button type="submit">Submit!</button>
+    </form>
+    <br>
+    <hr>
+
+    <h1>Iframe (Untuk menyematkan web yang sudah jadi)</h1>
+    <!-- Untuk menambahkan halaman web lain ke web kita -->
+
+    <!-- <iframe src="https://bimawib.space" frameborder="0"></iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d247.72144287005958!2d106.77210305135064!3d-6.579198625650824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1678072527673!5m2!1sid!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+
+    <h1>Div and Span</h1>
+
+    <!-- Digunakan untuk membungkus -->
+    <!-- div untuk menangkap seluruh space horizontal dengan bantuan CSS bawaan -->
+    <!-- div : display block || span : display inline  -->
+    <span>
+        <label for="nama">Nama : </label>
+        <input type="text" id="nama" name="nama" placeholder="Edenia">
+    </span>
+    <span>
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="edenia@ub.ac.id">
+    </span>
+    <span>
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" placeholder="password">
+    </span>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+    <br>
+
+    <div>Div has display properties : block display</div>
+    <span>Span has display properties : inline display</span>
+    <hr>
+
+    <h1>Semantic and Non-Semantic</h1>
+    <p>Semantic : terstruktur, better for SEO</p>
+    <p>Non-semantic : kebanyakan div, tidak jelas seperti hidup saya</p>
+
+    <hr>
+    <h1>CSS</h1>
+
+    <ol>
+        <li>Descendant Combinator : div h1</li>
+        <li>Child Combinator : div > h1 (hanya untuk anaknya saja)</li>
+        <li>Sibling Combinator : h1 ~ p (semua saudara kandung dari h1 (anak pertama tidak terpilih))</li>
+        <li>Adjacent Sibling Combinator : h1 + p (saudara kandung terdekat)</li>
+    </ol>
+
+    <section id="sibling-combinator">
+        <p>P1</p>
+        <p>P2</p>
+        <div>Ini Div</div>
+        <p>P3</p>
+        <p>P4</p>
+    </section>
+
+    <h1>Display</h1>
+    <section id="display">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, obcaecati libero iusto quis dolores ut! <div>Display</div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quisquam est voluptas fuga, voluptates eveniet!
+    </section>
 
 </body>
 </html>
