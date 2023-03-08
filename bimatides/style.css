@@ -51,6 +51,7 @@ table {
 
 body{
     font-family: 'Quantico', sans-serif;
+    background-color: aliceblue;
 }
 
 header{
@@ -62,49 +63,215 @@ a{
     text-decoration: none;
 }
 
+header nav > a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+section{
+    padding: 0 3vw;
+    margin-bottom: 4vh;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3vw;
+}
+
+#header a{
+    font-size: 24px;
+}
+
 h1#header-title{
     font-weight: bolder;
     font-size: 36px;
     color: black;
-    padding-top: 13px;
-    padding-left: 13px;
 }
 
-nav > a{
-    text-decoration: none;
-    color: black;
-    margin-left: 13px;
-}
 
 #first-section{
-    background-image: url("https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
     height: 92vh;
+    display: flex;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2vw;
 }
-/* source: Klaus at pexels.com */
 
 #first-section h1{
     font-weight: bolder;
-    font-size: 36px;
-}
-#first-section h2{
-    font-weight: bolder;
-    font-size: 24px;
+    font-size: 48px;
+    margin-bottom: 2vh;
 }
 #first-section p{
-    color: gray;
-    margin-top: 1vh;
+    font-size: 20px;
+    margin-bottom: 2vh;
+    color: dimgray;
 }
 
 #first-section-btn{
-    margin-top: 2vh;
+    margin-top: 3vh;
+    font-size: 20px;
 }
-
+#first-section div img{
+    max-width: 40vw;
+    /* border: 5px solid royalblue; */
+    border-radius: 13px;
+    box-shadow: 13px 13px rgba(128, 128, 128, 0.3);
+}
 #first-section .btn{
     background-color: white;
     color: black;
     border: royalblue 2px solid;
-    padding: 3px 6px;
+    border-radius: 3px;
+    padding: 5px 13px;
     margin-right: 13px;
 }
 
+#second-section{
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2vw;
+    margin-bottom: 13vh;
+}
+
+#second-section div img{
+    width: 40vw;
+    box-shadow: -13px 13px rgba(128, 128, 128, 0.3);
+    border-radius: 13px;
+}
+#second-section #second-description{
+    width: 50vw;
+}
+#second-section #second-description h1{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+    
+}
+#second-section #second-description ul{
+    font-size: 24px;
+}
+
+#second-section div ul li{
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 1vh;
+}
+
+#third-section div h1{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.specification-detail{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.img-holder{
+    margin-top: 5vh;
+    background-color: white;
+    max-width: 25vw;
+    border: 2px solid grey;
+    border-radius: 13px;
+    padding: 0px 1vw;
+    text-align: center;
+}
+.img-holder img{
+    display: block;
+    margin: auto;
+    max-height: 60%;
+    max-width: 20vw;
+}
+
+#fourth-section{
+    margin-top: 13vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13vh;
+}
+#fourth-section div h1{
+    font-size: 36px;
+    font-weight: bolder;
+    margin-bottom: 7vh;
+    text-align: center;
+}
+.accordion{
+    width: 69vw;
+}
+.accordion div h2 button{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#contact-section{
+    background-color: rgb(190, 189, 189);
+    padding: 2vh 4vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.map-contact{
+    width: 40vw;
+}
+.info-contact{
+    width: 30vw;
+}
+.info-contact h1{
+    font-size: 36px;
+    margin-bottom: 2vh;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.info-contact ul li{
+    list-style: disc;
+    list-style-position: inside;
+    margin: 10px 0;
+    font-size: 24px;
+}
+footer {
+    margin-top: auto;
+    height: 13vh;
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans',sans-serif;
+    text-align: center;
+    z-index: 20;
+}
+.footer .filler-foot {
+    height: 3vh;
+}
+.footer h1 {
+    font-size: 3vw;
+    text-decoration: overline;
+}
+.footer p {
+    font-size: 1.3vw;
+    text-decoration: underline;
+}
+
+.footer .logologo a {
+    text-decoration: none;
+    margin: 1vw;
+}
+.footer .logologo a img {
+    height: 25px;
+}
+.footer h2 {
+    margin-top: 2.5vh;
+    font-size: 0.7vw;
+}
+footer h2 a {
+    text-decoration: none;
+    color: white;
+}

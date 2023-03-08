@@ -5,36 +5,210 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BimaTides - Monitoring Pasut IK UB</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&family=Lexend:wght@500&family=Quantico:ital@1&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
-    <header>
-        <h1 id="header-title">BimaTides</h1>
+    <header id="header">
+        <div>
+            <h1 id="header-title">BimaTides</h1>
+        </div>
         <nav>
-            <a href="">About</a>
-            <a href="">Specifications</a>
-            <a href="">Graph</a>
-            <a href="">Contact</a>
+            <a href="#">About</a>
+            <a href="#third-section">Specifications</a>
+            <a href="#fourth-section">Graph</a>
+            <a href="#contact-section">Contact</a>
         </nav>
     </header>
 
-    <section id="first-section">
+    <section id="first-section" name="first-section">
         <div>
-            <h1>BimaTides - Live Monitoring Pasang Surut</h1>
-            <p>Pantau terus kondisi pasang surut dengan BimaTides. Alat pengukur pasang surut air laut berbasis Arduino dan IoT ini dapat mengukur ketinggian muka air laut dengan akurasi tinggi dan dapat dipantau secara langsung melalui internet</p>
+            <h1>BimaTides - Tide Monitoring Instrument</h1>
+            <p>Continuously monitor the tidal conditions with bimatides. This tide gauge based on Arduino and IoT can measure the height of sea levels with high accuracy and can be monitored directly through the internet.</p>
             <div id="first-section-btn">
-                <a class="btn" href="">More Info</a>
-                <a class="btn" href="">Contact Us</a>
+                <a class="btn" href="#second-section">More Info</a>
+                <a class="btn" href="#contact-section">Contact Us</a>
             </div>
         </div>
         <div>
-            <img src="" alt="">
+            <img src="https://images.pexels.com/photos/167676/pexels-photo-167676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sea Port image by Klaus at pexels.com">
         </div>
     </section>
-
+    <section id="second-section" name="second-section">
+        <div>
+            <img src="img/alatpasut.png" alt="BimaTides">
+        </div>
+        <div id="second-description">
+            <h1><u>Cheap Solution for Measuring Accurate Tide Data</u></h1>
+            <ul>
+                <li>
+                    High Accuracy Instrument (± 99% accuracy)
+                </li>
+                <li>
+                    Better Result With Angle and Sound Speed Correction
+                </li>
+                <li>
+                    Cheap and Affordable for Researcher and Student
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="third-section" name="third-section">
+        <div>
+            <h1><u>Instrument Specification</u></h1>
+        </div>
+        <div class="specification-detail">
+            <div class="img-holder">
+                <img src="https://cdn.sparkfun.com//assets/parts/6/4/3/3/11061-01.jpg" alt="Arduino Mega (Source : Funspark)">
+                <h1>Arduino Mega</h1>
+                <p>An open-source electronics platform platform that helps circuit developers build electronic projects.</p>
+            </div>
+            <div class="img-holder">
+                <div class="the-image">
+                    <img src="https://indobot.co.id/blog/wp-content/uploads/2021/08/1-JSN-SR04T.jpg" alt="Sensor Ultrasonik JSN-SR04T (Source : Indobot Academy)">
+                </div>
+                <h1>Ultrasonic Sensor JSN-SR04T</h1>
+                <p>The JSN-SR04T ultrasonic sensor is a distance measurement sensor based on ultrasonic waves</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://ram-e-shop.com/wp-content/uploads/2018/09/sen_dht22.jpg" alt="DHT-22 Sensor (Source : RAM Electronics)">
+                <h1>DHT-22 Sensor</h1>
+                <p>The DHT22 sensor is a sensor that functions to measure temperature and humidity.</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://mikroavr.com/wp-content/uploads/2018/03/RTC-ds3231.jpg" alt="DS3231 RTC (Source : microavr.com)">
+                <h1>DS3231 RTC</h1>
+                <p>DS3231 RTC (Real Time Clock) is a tool that functions to access time and calendar data.</p>
+            </div>
+            <div class="img-holder">
+                <img src="http://cdn.shopify.com/s/files/1/1509/1638/products/GY-521_6-Achsen_Gyroskop_und_Beschleunigungssensor_1024x.jpg?v=1581330201" alt="MPU-6050 (Source : A-Z Delivery)">
+                <h1>MPU-6050 Sensor</h1>
+                <p>The MPU-6050 Accelerometer sensor is an Inertial Measurement Unit (IMU) with a 3-axis Accelerometer acceleration sensor and a 3-axis Gyroscope balance control</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://www.auselectronicsdirect.com.au/assets/full/TA0191.jpg?20210309030545" alt="SD Card Module (Source : Aus Electronics Direct)">
+                <h1>SD Card Module</h1>
+                <p>The SD Card Shield module is used to read and write data on micro SD cards.</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://cdn.sparkfun.com//assets/parts/1/6/1/2/7/17146-WiFi_Module_-_ESP8266__4MB_-01.jpg" alt="WiFi Module ESP8266 (Source : Sparkfun)">
+                <h1>WiFi Module ESP8266</h1>
+                <p>The ESP8266 module is an integrated chip component designed to exchange data wirelessly</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://www.jaycar.co.nz/medias/sys_master/images/images/9795519709214/QP5521-dot-matrix-white-on-blue-lcd-16x2-characterImageMain-515.jpg" alt="LCD Display 16x2 (Source : Jaycar Electronics New Zealand)">
+                <h1>Liquid Crystal Display (LCD)</h1>
+                <p>LCD (Liquid Crystal Display) is a type of flat panel display which uses liquid crystals in its primary form of operation</p>
+            </div>
+            <div class="img-holder">
+                <img src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/3/8/3844-01_1.jpg" alt="Matrix Keypad (Source : Core Electronics Australia)">
+                <h1>Matrix Keypad</h1>
+                <p>A matrix keypad is the kind of keypad you see on microwave ovens, gas pumps, and calculators.</p>
+            </div>
+        </div>
+    </section>
+    <section id="fourth-section" name="fourth-section">
+        <div>
+            <h1><u>Measurement Graphic</u></h1>
+        </div>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Water Level
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <iframe src="https://thingspeak.com/channels/1407796/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" frameborder="0" style="height: 27vh;width: 60vw;"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Sound of Speed (Corrected)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <iframe src="https://thingspeak.com/channels/1407796/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" frameborder="0" style="height: 27vh;width: 60vw;"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Sensor Angle
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <iframe src="https://thingspeak.com/channels/1407796/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" frameborder="0" style="height: 27vh;width: 60vw;"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+                    Ambient Temperature
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body">
+                    <iframe src="https://thingspeak.com/channels/1407796/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15" style="height: 27vh;width: 60vw;" frameborder="0"></iframe>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive">
+                    Ambient Humidity
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+                  <div class="accordion-body">
+                    <iframe src="https://thingspeak.com/channels/1407796/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"  style="height: 27vh;width: 60vw;" frameborder="0"></iframe>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+    <section id="contact-section" name="contact-section">
+        <div class="map-contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3658.5425386809093!2d112.6114112665332!3d-7.952917405776499!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78827bc4a436e7%3A0x7c664cf087f7094b!2sFakultas%20Perikanan%20dan%20Ilmu%20Kelautan%20Universitas%20Brawijaya!5e0!3m2!1sid!2sid!4v1678279006826!5m2!1sid!2sid" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="info-contact">
+            <h1>Contact Us</h1>
+            <ul>
+                <li>Telephone : +6281217723269</li>
+                <li>Email : bimawib@student.ub.ac.id</li>
+                <li>LinkedIn : <a href="https://linkedin.com/in/bimawib" target="_blank">bimawib</a></li>
+                <li>Instagram : <a href="https://www.instagram.com/bimawib" target="_blank">bimawib</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="filler-foot"></div>
+        <div class="logologo">
+            <a target="blank" href="https://www.linkedin.com/in/bimawib/">
+                <img src="img/linkedinlogo.png" alt="linkedin">
+            </a>
+            <a target="blank" href="http://bimawib.space/">
+                <img src="img/weblogo.png" alt="web">
+            </a>
+            <a target="blank" href="https://www.instagram.com/bimawib/">
+                <img src="img/iglogo.jpg" alt="instagram">
+            </a>
+        </div>
+        <h2>Copyright © 2022 | <a href="http://bimawib.space/" class="bimawib">bimawib.space</a></h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
