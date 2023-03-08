@@ -57,6 +57,7 @@ body{
 header{
     background-color: royalblue;
     height: 8vh;
+    z-index: 6;
 }
 
 a{
@@ -69,6 +70,9 @@ header nav > a{
     margin-left: 20px;
     font-size: 24px;
 }
+header nav > a:hover{
+    color: yellow;
+}
 
 section{
     padding: 0 3vw;
@@ -80,6 +84,8 @@ section{
     align-items: center;
     justify-content: space-between;
     padding: 0px 3vw;
+    position: sticky;
+    top: 0;
 }
 
 #header a{
@@ -153,6 +159,7 @@ h1#header-title{
     font-size: 36px;
     font-weight: bolder;
     margin-bottom: 2vh;
+    text-decoration: underline;
     
 }
 #second-section #second-description ul{
@@ -224,6 +231,9 @@ h1#header-title{
 .map-contact{
     width: 40vw;
 }
+#for-mobile{
+    display: none;
+}
 .info-contact{
     width: 30vw;
 }
@@ -274,4 +284,122 @@ footer {
 footer h2 a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width:992px){
+    #first-section{
+        flex-direction: column-reverse;
+        margin-bottom: 5vh;
+        column-gap: 0;
+        justify-content: space-around;
+        height: auto;
+        text-align: center;
+    }
+    #first-section div img{
+        max-width: 90vw;
+        /* border: 5px solid royalblue; */
+        border-radius: 13px;
+        box-shadow: 0 0 0;
+        margin-top: 2vh;
+    }
+    #first-section h1{
+        margin-top: 2vh;
+        font-size: 24px;
+    }
+    #first-section p{
+        font-size: 18px;
+    }
+    #second-section{
+        flex-direction: column;
+        column-gap: 0;
+        margin-bottom: 5vh;
+        height: auto;
+        text-align: center;
+        justify-content: space-around;
+    }
+    #second-section div img{
+        width: 90vw;
+        /* border: 5px solid royalblue; */
+        border-radius: 13px;
+        box-shadow: 0 0 0;
+        margin-top: 2vh;
+    }
+    #second-section #second-description{
+        width: 90vw;
+    }
+    #second-section #second-description h1{
+        margin-top: 2vh;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    #second-section #second-description ul{
+        font-size: 18px;
+    }
+    #third-section{
+        flex-direction: column;
+        column-gap: 0;
+        margin-bottom: 5vh;
+        height: auto;
+        text-align: center;
+        justify-content: space-around;
+    }
+    #third-section div h1{
+        margin-top: 2vh;
+        font-size: 24px;
+        padding: 0px 0px;
+    }
+    #third-section .specification-detail .img-holder{
+        padding: 0px 0px;
+    }
+    #third-section .specification-detail .img-holder h1{
+        font-size: 18px;
+    }
+    #third-section .specification-detail .img-holder p{
+        display: none;
+    }
+    #fourth-section div h1{
+        font-size: 24px;
+    }
+    .accordion{
+        width: 90vw;
+        z-index: -1;
+    }
+    .accordion div h2 button{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    #contact-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 32px;
+    }
+    #contact-section .map-contact{
+        width: 90vw;
+    }
+    #for-pc{
+        display: none;
+    }
+    #for-mobile{
+        display: block;
+    }
+    .info-contact{
+        width: 90vw;
+    }
+    .info-contact h1{
+        font-size: 24px;
+        text-align: left;
+    }
+    .info-contact ul li{
+        font-size: 18px;
+    }
+    #header{
+        padding: 0px 5vw;
+    }
+    h1#header-title{
+        font-size: 24px;
+    }
+    header nav > a{
+        display: none;
+    }
 }
