@@ -1,0 +1,11 @@
+* {
+    font-family: 'Bruno Ace', cursive;
+}
+
+.navbar {
+    background-color: indigo;
+    color: white;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.69)
+}
+
+
