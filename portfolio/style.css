@@ -1,11 +1,183 @@
-* {
-    font-family: 'Bruno Ace', cursive;
-}
-
 .navbar {
     background-color: indigo;
     color: white;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.69)
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.69);
+    font-family: 'Bruno Ace', cursive;
 }
 
+section {
+    padding-top: 128px;
+    position: relative;
+}
 
+section::before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    font-weight: 900;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    top: 13px;
+    left: -13px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#home, #about, #work, #contact {
+    scroll-margin-top: 80px;
+}
+
+.home {
+    margin-bottom: 78px;
+}
+
+.home .col-md-4 img {
+    width: 100%;
+}
+
+/* .home h1 {
+    font-size: 48px;
+}
+
+.home h3 {
+    font-size: 48px;
+}
+
+.home p {
+    font-size: 18px;
+} */
+
+.home .arrow img {
+    width: 60px;
+}
+
+.btn {
+    border: 3px solid indigo;
+    background-color: white;
+    color: indigo;
+}
+
+.btn:hover, .btn.button.active {
+    border: 3px solid blue;
+    background-color: floralwhite;
+    color: blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#arrow {
+    animation: 1.3s upDown infinite;
+}
+
+.about {
+    margin-bottom: 78px;
+}
+
+.about::before {
+    content: 'About';
+}
+
+.about-exp-item {
+    margin-top: 32px;
+}
+
+.about-exp-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-exp-item-detail {
+    display: none;
+}
+
+.work {
+    margin-bottom: 78px;
+}
+
+.work::before {
+    content: 'Work';
+}
+
+.work-img img{
+    max-height: 40vh;
+}
+
+.work-description a{
+    text-decoration: none;
+    color: indigo;
+}
+
+.img-logo div img {
+    max-height: 33px;
+    max-width: 33px;
+    margin-bottom: 13px;
+}
+
+.img-logo .col-12 a {
+    margin-right: 13px;
+    text-decoration: none;
+    color: indigo;
+    font-weight: bold;
+}
+
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 1px solid gray;
+    padding: 32px 24px;
+    border-radius: 13px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+footer {
+    margin-top: auto;
+    height: 6vh;
+    background-color: indigo;
+    color: white;
+    font-family: 'Bruno Ace', cursive;
+    text-align: center;
+    z-index: 20;
+}
+.footer h2 {
+    font-size: 0.7vw;
+}
+footer h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(13px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    section::before{
+        left: 13px;
+    }
+}
